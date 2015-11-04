@@ -171,6 +171,7 @@ public class BlockingConsumer extends ConsumerImpl {
             } catch (InterruptedException ie) {
                 logger.trace("BlockingConsumer " + this + " woken up while waiting for buffer");
             }
+            logger.trace("After waiting");
         }
     }
 
